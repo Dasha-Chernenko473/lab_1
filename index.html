@@ -13,9 +13,18 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+ let userId = localStorage.getItem('user_id');
+  if (!userId) {
+    userId = 'user_' + Math.random().toString(36).substr(2, 9);
+    localStorage.setItem('user_id', userId);
+  }
+
+  // Передаємо User-ID у Google Analytics
   gtag('config', 'G-74RTF05Z2P', {
-    'user_id': 'UNIQUE_USER_ID'  // Сюди потрібно вставляти унікальний ідентифікатор користувача
+    'user_id': userId
   });
+
+  console.log('User-ID передано:', userId);
 </script>
   
 </head>
