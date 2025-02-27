@@ -1,0 +1,44 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Шрифт */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #fbc2eb, #a6c0fe); /* Градієнтний фон */
+            color: #333; /* Колір тексту */
+        }
+
+        #countdown {
+            background: rgba(255, 255, 255, 0.8); /* Фон блока */
+            padding: 30px 50px; /* Відступи */
+            border-radius: 20px; /* Радіус округлення */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Тінь */
+            text-align: center;
+            display: flex; /* Використовуємо flexbox */
+            flex-direction: column; /* Вертикальне вирівнювання */
+            align-items: center; /* Вирівнювання по центру */
+        }
+
+        #timer {
+            font-size: 4rem; /* Розмір шрифту таймера */
+            letter-spacing: 5px; /* Відстань між літерами */
+            color: #ff6f61; /* Колір тексту таймера */
+            margin-bottom: 10px; /* Відступ знизу */
+        }
+
+        .timer-units {
+            display: flex; /* Використовуємо flexbox */
+            justify-content: center; /* Вирівнювання по центру */
+        }
+
+        .timer-unit-container {
+            padding: 0 10px; /* Відступи зліва і справа */
+        }
+
+        .timer-unit {
+            font-size: 3 rem; /* Розмір шрифту одиниць часу */
+            text-transform: uppercase;
+            letter-spacing: 2px; /* Відстань між літерами */
+            color: #333; /* Колір тексту одиниць часу */
+        }
