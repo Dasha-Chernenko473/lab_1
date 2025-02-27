@@ -13,7 +13,11 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-74RTF05Z2P');
+  // Передача User-ID (замінити 'user_123456' на реальний ідентифікатор)
+  let userId = localStorage.getItem("userId") || "user_123456"; // збереження User-ID
+  gtag('config', 'G-74RTF05Z2P', {
+    'user_id': userId
+  });
 </script>
   
 </head>
