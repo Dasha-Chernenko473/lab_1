@@ -26,3 +26,4 @@ updateCountdown();
 
 // Оновлювати кожну секунду
 const interval = setInterval(updateCountdown, 1000);
+
