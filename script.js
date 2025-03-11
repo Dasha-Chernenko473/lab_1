@@ -2,7 +2,8 @@ const targetDate = new Date('2025-12-31T23:59:59'); // Цільова дата
 
 function updateCountdown() {
   const currentTime = new Date();
-  const difference = targetDate - currentTime;
+  const targetDate = new Date("2025-12-31T23:59:59").getTime();
+const difference = targetDate - Date.now();
 
   if (difference < 0) {
     clearInterval(interval);
@@ -15,11 +16,12 @@ function updateCountdown() {
   const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerText = days;
-  document.getElementById("hours").innerText = hours;
-  document.getElementById("minutes").innerText = minutes;
-  document.getElementById("seconds").innerText = seconds;
-}
+  const timerElements = {
+  days: document.getElementById("days"),
+  hours: document.getElementById("hours"),
+  minutes: document.getElementById("minutes"),
+  seconds: document.getElementById("seconds"),
+};
 
 // Запустити одразу після завантаження сторінки
 updateCountdown();
