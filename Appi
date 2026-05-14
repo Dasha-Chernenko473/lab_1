@@ -1,0 +1,10 @@
+# DevSecOps Lab Test
+password = "ADMIN_PASSWORD_12345"
+api_key = "SK-ABC123XYZ"
+
+def login():
+    print("Введіть логін:")
+    user = input()
+    print("Привіт, " + user)
+
+login()
