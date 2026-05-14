@@ -1,10 +1,5 @@
-# DevSecOps Lab Test
-password = "ADMIN_PASSWORD_12345"
-api_key = "SK-ABC123XYZ"
+aws_access_key = "AKIAIMNO7CQD6EXAMPLE" 
+db_password = "password12345"
 
-def login():
-    print("Введіть логін:")
-    user = input()
-    print("Привіт, " + user)
-
-login()
+def insecure_function(user_input):
+    eval(user_input) # Дуже небезпечна функція
